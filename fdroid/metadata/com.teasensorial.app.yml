@@ -1,0 +1,32 @@
+Categories:
+  - Science & Education
+License: GPL-3.0-only
+AuthorName: valdenor
+AuthorEmail: valdenor.sa@proton.me
+SourceCode: https://github.com/alunoadsnoite/tea-sensorial
+IssueTracker: https://github.com/alunoadsnoite/tea-sensorial/issues
+
+AutoName: TEA Sensorial
+
+RepoType: git
+Repo: https://github.com/alunoadsnoite/tea-sensorial.git
+
+Builds:
+  - versionName: 0.2.0
+    versionCode: 2
+    commit: v0.2.0
+    subdir: android/app
+    gradle:
+      - yes
+    sudo:
+      - apt-get update
+      - apt-get install -y ca-certificates curl xz-utils
+      - cd /tmp
+      - curl --fail --location --output node-v24.22.0-linux-x64.tar.xz https://nodejs.org/dist/v24.22.0/node-v24.22.0-linux-x64.tar.xz
+      - echo 'cc2f601cee82d9a5a233302fe307abc600727035fd7d2c3a3571755989e95008  node-v24.22.0-linux-x64.tar.xz' | sha256sum -c -
+      - tar -xJf node-v24.22.0-linux-x64.tar.xz -C /opt
+      - for cmd in node npm npx; do ln -sf /opt/node-v24.22.0-linux-x64/bin/$cmd /usr/local/bin/$cmd; done
+    init:
+      - cd ../..
+      - npm ci --no-audit --no-fund
+      - sh fdroid/prepare.sh

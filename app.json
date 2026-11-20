@@ -1,0 +1,22 @@
+{
+  "expo": {
+    "name": "TEA Sensorial",
+    "slug": "tea-sensorial",
+    "version": "0.2.0",
+    "orientation": "default",
+    "platforms": [
+      "android"
+    ],
+    "userInterfaceStyle": "automatic",
+    "android": {
+      "package": "com.teasensorial.app",
+      "versionCode": 2,
+      "allowBackup": false,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon-foreground.png",
+        "backgroundColor": "#070C4B"
+      }
+    },
+    "icon": "./assets/icon.png"
+  }
+}

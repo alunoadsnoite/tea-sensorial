@@ -1,0 +1,3 @@
+TEA Sensorial é um diário sensorial offline para pessoas autistas. Registre onde uma experiência aconteceu, quais sentidos estavam envolvidos, a intensidade e o que ajudou. Consulte o histórico para reconhecer padrões e crie um cartão com as acomodações que você escolher.
+
+O app guarda os registros no aparelho e funciona sem conta, anúncios ou análise de uso.

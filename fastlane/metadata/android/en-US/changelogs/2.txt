@@ -1,0 +1,1 @@
+Added optional sensory details, custom entries and more ways to record what helped. The app now has an S launcher icon.
