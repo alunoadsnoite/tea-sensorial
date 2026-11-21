@@ -76,8 +76,11 @@ O TEA Autonomia já registra carga sensorial e gatilhos e apresenta um resumo do
 
 ```
 tea-sensorial/
-├── App.tsx                 # navegação, estado e telas
+├── App.tsx                 # inicialização, navegação e estado compartilhado
 ├── src/
+│   ├── screens/            # telas separadas por funcionalidade
+│   ├── ui/                 # contexto, estilos e componentes compartilhados
+│   ├── config.ts           # versão do app e contato
 │   ├── catalog.ts          # sentidos, contextos e ajudas
 │   ├── database.ts         # schema, CRUD, preferências e exportação
 │   ├── i18n.ts             # PT, EN, ES
@@ -151,3 +154,7 @@ GPL-3.0-only. Consulte [LICENSE](LICENSE).
 ## Como contribuir
 
 Sugestões, traduções e relatos de problemas são bem-vindos. Abra uma issue com o contexto e o comportamento esperado. Para alterações de código, explique a mudança e os testes realizados no pull request. Use dados fictícios nos exemplos e nas capturas.
+
+## Verificações automáticas
+
+O GitHub Actions executa checagem de tipos, testes de banco e perfil e exportação do bundle Android nos pushes e pull requests.
