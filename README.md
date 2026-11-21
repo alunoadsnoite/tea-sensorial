@@ -1,5 +1,13 @@
 # TEA Sensorial
 
+**Reconheça padrões sensoriais e comunique suas necessidades.**
+
+`React Native · Expo · SQLite`
+
+[Reportar problema](https://github.com/alunoadsnoite/tea-sensorial/issues) · [Licença](LICENSE)
+
+<img src="fastlane/metadata/android/pt-BR/images/icon.png" alt="Ícone do TEA Sensorial" width="104">
+
 **Seu mapa sensorial, no seu ritmo.**
 
 Aplicativo Android offline para pessoas autistas registrarem como o ambiente as afeta, reconhecerem padrões com o tempo e criarem um **cartão de acomodações** que possam mostrar no trabalho, na escola, em consultas ou para a família.
@@ -17,7 +25,7 @@ Os apps TEA existentes cobrem bem três momentos: comunicação imediata (`tea_f
 - O que comprovadamente ajuda?
 - Como comunicar essas necessidades a terceiros sem depender de um laudo?
 
-O check-in do `tea-mvp` registra carga sensorial e gatilhos, mas é um retrato do momento e o histórico mostra apenas os últimos 7 dias, sem agregar padrões. O TEA Sensorial nasce para ser o app do **autoconhecimento sensorial e da comunicação de acomodações** — não mais um app de crise.
+O TEA Autonomia já registra carga sensorial e gatilhos e apresenta um resumo dos últimos sete dias. O TEA Sensorial complementa esse fluxo com registros pós-evento, um perfil por sentidos e contextos e um cartão de acomodações. O TEA Sensorial nasce para ser o app do **autoconhecimento sensorial e da comunicação de acomodações** — não mais um app de crise.
 
 ## O que o app faz
 
@@ -139,3 +147,7 @@ Valdenor — valdenor.sa@proton.me
 ## Licença
 
 GPL-3.0-only. Consulte [LICENSE](LICENSE).
+
+## Como contribuir
+
+Sugestões, traduções e relatos de problemas são bem-vindos. Abra uma issue com o contexto e o comportamento esperado. Para alterações de código, explique a mudança e os testes realizados no pull request. Use dados fictícios nos exemplos e nas capturas.
