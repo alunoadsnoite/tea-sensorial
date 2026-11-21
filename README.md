@@ -158,3 +158,7 @@ Sugestões, traduções e relatos de problemas são bem-vindos. Abra uma issue c
 ## Verificações automáticas
 
 O GitHub Actions executa checagem de tipos, testes de banco e perfil e exportação do bundle Android nos pushes e pull requests.
+
+## Identidade visual
+
+O ícone usa a letra **S** com o infinito entrelaçado, no mesmo estilo do TEA Passos. A imagem original aprovada está em `assets/icon-source.png`; as versões do lançador Android e dos catálogos em português e inglês derivam dela. O ícone adaptável inclui margem para as máscaras dos lançadores.
