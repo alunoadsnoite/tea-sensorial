@@ -198,9 +198,14 @@ const messages = {
   data: ['Seus dados', 'Your data', 'Tus datos'],
   exportData: ['Exportar registros', 'Export entries', 'Exportar registros'],
   exportHint: [
-    'Gera um texto JSON para você guardar onde quiser.',
-    'Creates JSON text you can save wherever you want.',
-    'Genera un texto JSON para guardar donde quieras.',
+    'A exportação inclui todos os registros, notas, datas, preferências e o nome salvo no cartão, em texto JSON legível. Para enviar só as acomodações escolhidas, use Meu cartão.',
+    'The export includes every entry, note, date, preference and the saved card name as readable JSON. To send only the accommodations you selected, use My card.',
+    'La exportación incluye todos los registros, notas, fechas, preferencias y el nombre guardado en la tarjeta, en texto JSON legible. Para enviar solo las adaptaciones elegidas, usa Mi tarjeta.',
+  ],
+  exportConfirm: [
+    'O aplicativo que você escolher poderá ler e guardar esses dados. Você quer continuar?',
+    'The app you choose can read and keep these data. Do you want to continue?',
+    'La aplicación elegida podrá leer y guardar estos datos. ¿Quieres continuar?',
   ],
   exportError: ['Não foi possível exportar.', 'Could not export.', 'No se pudo exportar.'],
   localOnly: [

@@ -11,7 +11,8 @@ fs.writeFileSync(packagePath, JSON.stringify(pkg, null, 2) + '\n');
 
 const configPath = 'app.json';
 const config = JSON.parse(fs.readFileSync(configPath));
-config.expo.android.blockedPermissions = [
+config.expo.android.blockedPermissions = [...new Set([
+  ...(config.expo.android.blockedPermissions ?? []),
   'android.permission.INTERNET',
   'android.permission.READ_EXTERNAL_STORAGE',
   'android.permission.WRITE_EXTERNAL_STORAGE',
@@ -21,7 +22,7 @@ config.expo.android.blockedPermissions = [
   'android.permission.ACCESS_FINE_LOCATION',
   'android.permission.ACCESS_COARSE_LOCATION',
   'android.permission.READ_CONTACTS',
-];
+])];
 fs.writeFileSync(configPath, JSON.stringify(config, null, 2) + '\n');
 JS
 npx --no-install expo prebuild --platform android --no-install

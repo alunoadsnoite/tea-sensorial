@@ -1,0 +1,1 @@
+Aviso e confirmação antes de exportar registros. A exportação explica quais dados serão compartilhados.

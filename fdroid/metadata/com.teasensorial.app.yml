@@ -12,9 +12,9 @@ RepoType: git
 Repo: https://github.com/alunoadsnoite/tea-sensorial.git
 
 Builds:
-  - versionName: 0.2.0
-    versionCode: 2
-    commit: v0.2.0
+  - versionName: 0.2.1
+    versionCode: 3
+    commit: v0.2.1
     subdir: android/app
     gradle:
       - yes
@@ -30,3 +30,8 @@ Builds:
       - cd ../..
       - npm ci --no-audit --no-fund
       - sh fdroid/prepare.sh
+
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: 0.2.1
+CurrentVersionCode: 3

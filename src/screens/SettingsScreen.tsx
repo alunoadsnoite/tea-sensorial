@@ -51,6 +51,15 @@ export function SettingsScreen({
     ]);
   }
 
+  function confirmExport() {
+    Alert.alert(t("exportData"), `${t("exportHint")}
+
+${t("exportConfirm")}`, [
+      { text: t("cancel"), style: "cancel" },
+      { text: t("exportData"), onPress: () => void handleExport() },
+    ]);
+  }
+
   async function handleExport() {
     setExportError(null);
     setExporting(true);
@@ -151,7 +160,7 @@ export function SettingsScreen({
           <Button
             label={t("exportData")}
             variant="secondary"
-            onPress={() => void handleExport()}
+            onPress={confirmExport}
             disabled={exporting}
           />
           <Text style={styles.caption}>{t("exportHint")}</Text>
