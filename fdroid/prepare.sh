@@ -26,6 +26,9 @@ config.expo.android.blockedPermissions = [...new Set([
 fs.writeFileSync(configPath, JSON.stringify(config, null, 2) + '\n');
 JS
 npx --no-install expo prebuild --platform android --no-install
+# Match the NDK selected by the root Expo project and the F-Droid recipe.
+# AGP's library default otherwise selects 27.0 while F-Droid provides 27.1.
+sed -i '/^android {$/a\  ndkVersion rootProject.ext.ndkVersion' node_modules/expo-sqlite/android/build.gradle
 sed -i '/signingConfig signingConfigs\.debug/d' android/app/build.gradle
 find node_modules -type d -name local-maven-repo -prune -exec rm -r {} +
 rm -rf node_modules/hermes-compiler/hermesc/osx-bin node_modules/hermes-compiler/hermesc/win64-bin
